@@ -1,0 +1,58 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<button type="button" class="btn btn-primary-outline btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
+      
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Iniciar Sesion</h4>
+            </div>
+            <div class="modal-body">
+              <div class="tabbable">
+                  <ul class="nav nav-tabs" data-tabs="tabs">
+                      <li class="active" class="nav-item ">
+                          <a href="#corr" class="nav-link" data-toggle="tab" role="tab" >Corredor</a>
+                      </li>
+                      <li>
+                          <a href="#prop" data-toggle="tab">Propietario</a>
+                      </li>
+                      <li>
+                          <a href="#admin" data-toggle="tab"><img src="img/admin_logo.png"/></a>
+                      </li>
+                  </ul>
+                  
+                  <div class="tab-content">
+                      <div class="tab-pane active" id="corr">
+                          <form id="FormOne" role="form" class="container-fluid" action="One.asp" method="post">
+                              <div class="row">
+                                  FormOne
+                              </div>
+                          </form>
+                      </div>
+                      <div class="tab-pane" id="prop">
+                          <form id="FormTwo" role="form" class="container-fluid" action="Two.asp" method="post">
+                              <div class="row">
+                                  FormTwo
+                              </div>
+                          </form>
+                      </div>
+                      <div class="tab-pane" id="admin">
+                          <form id="FormTwo" role="form" class="container-fluid" action="Two.asp" method="post">
+                              <div class="row">
+                                  admin
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Ingresar</button>
+            </div>
+          </div>
+        </div>
+      </div>
